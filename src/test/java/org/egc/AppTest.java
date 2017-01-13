@@ -5,6 +5,13 @@ import org.jgrapht.UndirectedGraph;
 import org.jgrapht.graph.DefaultEdge;
 import org.jgrapht.graph.SimpleGraph;
 
+import com.google.common.*;
+import com.google.common.collect.Collections2;
+import com.google.common.collect.HashMultiset;
+import com.google.common.collect.Multimap;
+import com.google.common.collect.Multiset;
+import com.google.common.collect.Multisets;
+
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -43,5 +50,6 @@ public class AppTest
     public void testMio(){
     	UndirectedGraph<String, DefaultEdge> g =
                 new SimpleGraph<String, DefaultEdge>(DefaultEdge.class);
+    	Multiset<Integer> m=HashMultiset.create();
     }
 }
